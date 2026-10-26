@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ghealth</title>
+<meta name="description" content="ghealth is a personal command-line tool for reading my own Google Health data.">
+<style>
+  :root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --link: #0969da; --border: #d1d9e0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --link: #4493f8; --border: #3d444d; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+  h1 { margin: 0 0 4px; font-size: 2rem; }
+  h2 { margin-top: 2rem; font-size: 1.15rem; }
+  .tagline { margin: 0; color: var(--muted); }
+  a { color: var(--link); }
+  ul { padding-left: 1.25rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>ghealth</h1>
+  <p class="tagline">A personal command-line tool for reading my own Google Health data.</p>
+
+  <h2>What it does</h2>
+  <p>ghealth runs on my own computer and lets me query my health and fitness data from the Google Health API, such as steps, heart rate, sleep, and body measurements. I use it to build private charts and reports about my own sleep and activity.</p>
+
+  <h2>Why it requests access to Google user data</h2>
+  <p>To read this data, ghealth asks Google for read-only access through the following permissions:</p>
+  <ul>
+    <li><strong>Activity and fitness</strong> (read-only): steps, distance, exercise, active minutes.</li>
+    <li><strong>Health metrics and measurements</strong> (read-only): heart rate, heart rate variability, weight, oxygen saturation.</li>
+    <li><strong>Sleep</strong> (read-only): sleep sessions and sleep stages.</li>
+  </ul>
+  <p>ghealth cannot write, change, or delete any health data. It is a personal project for my own use and is not offered as a service to other people.</p>
+
+  <h2>Privacy</h2>
+  <p>Data stays on my own computer and is never sold, shared, or used for advertising. Read the full <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
